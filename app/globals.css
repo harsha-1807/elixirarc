@@ -1,33 +1,201 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
+  @import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .topic1{
+    font-weight: 600;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .title2{
+    font-size:x-large;
+    font-weight: 600;
+    padding:8px 0px 6px 0px;
   }
-}
+  .ul1{
+    list-style-type: disc;
+    list-style: inside;
+  }
+  .title4{
+    font-size:x-large;
+    font-weight: 600;
+    /* padding: 10px 0px 0px 0px; */
+    padding-top: 20px;
+  }
+  
+  .glass {
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .custom-dialog {
+    width: max-content; /* Set the width of the dialog */
+    max-height: max-content; /* Optional: Set a maximum height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    
+  }
+  
+  .coursecss {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Equivalent to space-y-6 */
+    border-width: 1px;
+    border-color: #d1d5db; /* Equivalent to border-gray-100 */
+    border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25); /* Equivalent to shadow-2xl */
+    transition-property: transform;
+    transition-duration: 0.3s; /* Equivalent to transition-transform */
+    padding: 3rem 2rem; 
+  }
+  
+  .coursecss.dark {
+    border-color: #4b5563; /* Equivalent to dark:border-gray-700 */
+    background-color: #1f2937; /* Equivalent to dark:bg-gray-800 */
+    box-shadow: 0px 4px 6px -1px rgba(156, 163, 175, 0.4), 0px 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-gray-600 */
+  }
+  
+  .coursecss:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+  }
+  
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  
+  
+  .font-sans {
+    font-size: 5vw;
+    line-height: normal;
+  }
+  
+  .icons {
+    position: absolute;
+  }
+  
+  .icon1 {
+    top: 7vw;
+    left: 40vw;
+  }
+  .icon2 {
+    bottom: 7vw;
+    left: 4vw;
+  }
+  .icon3 {
+    bottom: 10vw;
+    left: 29vw;
+  }
+  .icon4 {
+    top: 7vw;
+    left: 4vw;
+  }
+  .h2 {
+    font-size: medium;
+    font-weight: 700;
+  }
+  .p {
+    font-size: smaller;
+    font-weight: 300;
+    margin-top: 8px;
+  }
+  
+  .iconb {
+    left: 4vw;
+  }
+  
+  .icona {
+    right: 4vw;
+  }
+  
+  .main2 {
+    left: 5vw;
+  }
+  
+  .d2 {
+    right: 0vw;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 0 0% 3.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 0 0% 3.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 0 0% 3.9%;
+
+      --primary: 0 0% 9%;
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 0 0% 96.1%;
+      --secondary-foreground: 0 0% 9%;
+
+      --muted: 0 0% 96.1%;
+      --muted-foreground: 0 0% 45.1%;
+
+      --accent: 0 0% 96.1%;
+      --accent-foreground: 0 0% 9%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 89.8%;
+      --input: 0 0% 89.8%;
+      --ring: 0 0% 3.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
