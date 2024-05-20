@@ -323,13 +323,17 @@ const Core = () => {
                       <DialogTitle>{group.title}</DialogTitle>
                     </DialogHeader>
                     <div className="w-full">
-                      <h2 className="title2">{group.T1}</h2>
+                      <h2 className="wtitle2">{group.T1}</h2>
                       <p>{group.T1content}</p>
+                      <div className="">
+
                       <ReactPlayer
                         url={group.Video}
                         // playing="true"
-                        className="w-10px"
+                        
+                        
                       />
+                      </div>
                       <h2 className="title2 ">{group.T2}</h2>
                       <ul>
                         {group.T2content &&

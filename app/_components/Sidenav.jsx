@@ -40,7 +40,7 @@ const Sidenav = () => {
   const pathname = usePathname();
 
   return (
-    <section className="w-full max-w-[264px]">
+    <section className="w-full max-w-[264px] z-auto">
       <Sheet>
         <SheetTrigger asChild>
           <Image

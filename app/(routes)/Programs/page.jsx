@@ -23,7 +23,8 @@ function Programs() {
 
   return (
     
-    <div className="text-center w-screen ">
+    
+    <div className="text-center w-screen max-h-max">
      
       <h2 className=" text-center mt-5 text-2xl font-semibold">
         Programs At {" "}
