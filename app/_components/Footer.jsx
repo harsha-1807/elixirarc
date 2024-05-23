@@ -39,7 +39,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/About"
                   >
                     About us
                   </a>
@@ -48,7 +48,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/About"
                   >
                     What we do
                   </a>
@@ -57,13 +57,13 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/About"
                   >
-                    Vision and Mission
+                    Mission and Vision
                   </a>
                 </li>
 
-               ``
+               
               </ul>
             </div>
 
@@ -74,7 +74,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Programs"
                   >
                     Embedded System
                   </a>
@@ -83,7 +83,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Programs"
                   >
                     {" "}
                     VLSI{" "}
@@ -93,7 +93,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Programs"
                   >
                     {" "}
                     Robotics{" "}
@@ -103,7 +103,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Programs"
                   >
                     {" "}
                     Electric Vehicles(EV){" "}
@@ -119,7 +119,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Faq"
                   >
                     {" "}
                     FAQs{" "}
@@ -129,7 +129,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Contact"
                   >
                     {" "}
                     Contact us{" "}
@@ -138,7 +138,7 @@ function Footer() {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="/Contact"
                   >
                     {" "}
                     Help center{" "}
@@ -172,7 +172,7 @@ function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                    // href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                    // href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +215,10 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">0123456789</span>
+                    <span className="flex-1 text-gray-700 ">99441 35600 <br />
+                    88709 92126
+                    <br />
+                    81900 22020</span>
                   </a>
                 </li>
 

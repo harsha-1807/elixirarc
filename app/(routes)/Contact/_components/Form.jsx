@@ -70,7 +70,10 @@ const Form = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-base text-body-color leading-relaxed mb-9">
-                  
+                Thank you for your interest in our programs! Please take a moment to let us know that you are interested, and our team will contact you as soon as possible.
+                
+
+Thank you for your cooperation.
                 </p>
               </div>
             </div>

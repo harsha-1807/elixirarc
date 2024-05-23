@@ -46,7 +46,7 @@ export default function Home() {
             student to achieve their desired position in this competitive world
           </p>
           <a
-            href="#member"
+            href="/Programs"
             className="rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max "
           >
             Explore Now!
@@ -290,7 +290,7 @@ export default function Home() {
           className="icons hidden md:block"
         />
         <h2 className="text-black  text-center font-semibold md:text-[3vw] text-[1.5rem] h-max">
-          What Students's Say{" "}
+          What Students's Ask{" "}
         </h2>
         <p className="text-[1rem] md:text-[1vw] text-center font-medium text-[#8A8A8A] h-max">
           Discover the impact we make{" "}

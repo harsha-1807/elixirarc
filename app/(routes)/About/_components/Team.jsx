@@ -1,15 +1,31 @@
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
+
 import Link from 'next/link';
 import React from 'react';
 
 const Team = () => {
   return (
     <div id="team" className="section relative pt-20 pb-8 md:pt-16 dark:bg-gray-800">
+          <Image
+          src="/design2Elixir.svg"
+          alt="design"
+          height={300}
+          width={300}
+          className="icons bottom-[0rem] d2 hidden md:block" 
+        />
+            <Image
+          src="/design1Elixir.svg"
+          alt="design"
+          height={300}
+          width={300}
+          className="icons  hidden md:block"
+        />
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* section header */}
         <header className="text-center mx-auto mb-12"> 
           <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">
-            <span className="font-light">Our</span> Team
+            <span className="font-medium">Our</span> Team
           </h2>
           <svg
             version="1.1"

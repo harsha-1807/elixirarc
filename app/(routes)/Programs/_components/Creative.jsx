@@ -7,7 +7,7 @@ const Creative = () => {
   const groupsData = [
     {
       title: "Web development",
-      imgSrc: "/uiux.png",
+      imgSrc: "/Webdev.jpg",
       description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
     },
     {

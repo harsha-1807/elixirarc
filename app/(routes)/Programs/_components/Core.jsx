@@ -19,7 +19,7 @@ const Core = () => {
   const groupsData = [
     {
       title: "Embedded",
-      imgSrc: "/embedded/micro.jpg",
+      imgSrc: "/embedded.svg",
       description:
         "Embedded systems are specialized computer systems designed for a specific function. Unlike general-purpose computers, they can operate independently or as part of a larger system",
       T1: "What are Embedded Systems? ",
@@ -95,7 +95,7 @@ const Core = () => {
     },
     {
       title: "VLSI",
-      imgSrc: "/vlsi.jpg",
+      imgSrc: "/VLSI.svg",
       description:
         "VLSI stands for Very-Large-Scale Integration. It's a technology for creating integrated circuits (ICs) by combining millions or even billions of transistors onto a single chip.",
       T1: "What is VLSI?",
@@ -157,13 +157,13 @@ const Core = () => {
         "Product Engineer",
         "Technical Marketing Engineer",
       ],
-      Video:"/"
+      Video:"https://youtu.be/Bu52CE55BN0?si=eDUN4Qc36wZ7PUWw"
 
     },
     
     {
       title: "Robotics",
-      imgSrc: "/Robotics.jpg",
+      imgSrc: "/Robotics.svg",
       // imgSrc:"/5253224.webp",
       description:"Robotics is an interdisciplinary field that integrates engineering, computer science, and other disciplines to design, build, operate, and use robots.",
       T1: "What is Robotics?",
@@ -288,7 +288,7 @@ const Core = () => {
         "Electric Vehicle Systems Integration Engineer",
         "Electric Vehicle Project Manager",
       ],
-      Video:"/"
+      Video:"https://youtu.be/GHGXy_sjbgQ?si=Q0Rkbp8Rww2LS4UL"
     }    
   ];
 
@@ -303,6 +303,8 @@ const Core = () => {
           <div className="grid gap-6 md:mx-auto md:w-10/12   md:grid-cols-2">
             {groupsData.map((group, index) => (
               <div key={index} className="coursecss ">
+                <div className="h-[16rem] flex items-center">
+
                 <Image
                   className="mx-auto rounded-xl"
                   width={300}
@@ -311,11 +313,12 @@ const Core = () => {
                   alt="illustration"
                   loading="lazy"
                   
-                />
+                  />
+                  </div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                   {group.title}
                 </h3>
-                <p>{group.description}</p>
+                <p className="md:h-[5rem]">{group.description}</p>
 
                 <Dialog className="custom-dialog ">
                   <DialogTrigger>
@@ -327,16 +330,21 @@ const Core = () => {
                       <DialogTitle>{group.title}</DialogTitle>
                     </DialogHeader>
                     <div className="w-full">
-                      <h2 className="wtitle2">{group.T1}</h2>
+                      <h2 className="title2 font-extrabold">{group.T1}</h2>
                       <p>{group.T1content}</p>
-                      <div className="">
-
-                      {/* <ReactPlayer
+                      <br />
+                      <div className="w-[16rem] h-[9rem]  md:w-[32rem] md:h-[18rem] aspect-video  ">
+                     
+                      <ReactPlayer
                         url={group.Video}
                         // playing="true"
+                        width="100%"
+                        height="100%"
+                       
+                        light={true}
 
-                      /> */}
-                      <video url={group.imgSrc} />
+                      />
+                      {/* <video url={group.imgSrc} /> */}
                       </div>
                       <h2 className="title2 ">{group.T2}</h2>
                       <ul>
@@ -345,7 +353,9 @@ const Core = () => {
                             <li style={{ marginLeft: "2rem" }} key={index}>
                               <span className="topic1">{item.title}:</span>
                               {item.description}
+                              
                             </li>
+                            
                           ))}
                       </ul>
                       <h2 className="title4">{group.T3}</h2>
@@ -374,7 +384,7 @@ const Core = () => {
         </div>
       </div>
       {/* <Footer/> */}
-      <div className="py-[55rem] md:py-0"></div>
+      <div className="pb-[68rem] md:py-[8rem]"></div>
     </div>
 
   );
