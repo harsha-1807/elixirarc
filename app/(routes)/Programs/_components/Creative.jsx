@@ -7,17 +7,17 @@ const Creative = () => {
   const groupsData = [
     {
       title: "Web development",
-      imgSrc: "/",
+      imgSrc: "/uiux.png",
       description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
     },
     {
       title: "UI/UX",
-      imgSrc: "/",
+      imgSrc: "/uiux.png",
       description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
     },
     {
       title: "Video Editing",
-      imgSrc: "/",
+      imgSrc: "/vediting.png",
       description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
     }
   ];
@@ -27,7 +27,7 @@ const Creative = () => {
       <div className="relative py-16">
         <div className="container relative m-auto px-6 text-gray-500 md:px-12">
         <h2 className="text-2xl font-semibold text-black pb-6">
-            <span className="text-[#286AEA]">Creative </span>Courses
+            <span className="text-[#286AEA]">Creative </span>Programs
           </h2>
           <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
             {/* Map over the groupsData array to render each "group" */}
@@ -44,9 +44,9 @@ const Creative = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                   {group.title}
                 </h3>
-                <p>
+                {/* <p>
                   {group.description}
-                </p>
+                </p> */}
                
               </div>
             ))}

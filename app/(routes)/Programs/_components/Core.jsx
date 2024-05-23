@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+
+
 import React from "react";
 import {
   Dialog,
@@ -11,14 +13,15 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ReactPlayer from "react-player";
+import Footer from "@/app/_components/Footer";
 
 const Core = () => {
   const groupsData = [
     {
       title: "Embedded",
-      imgSrc: "/",
+      imgSrc: "/embedded/micro.jpg",
       description:
-        "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.",
+        "Embedded systems are specialized computer systems designed for a specific function. Unlike general-purpose computers, they can operate independently or as part of a larger system",
       T1: "What are Embedded Systems? ",
       T1content:
         "Embedded systems are specialized computer systems designed for a specific function. Unlike general-purpose computers, they can operate independently or as part of a larger system, often with minimal human intervention. They're the silent workhorses in many devices we use daily. ",
@@ -92,9 +95,9 @@ const Core = () => {
     },
     {
       title: "VLSI",
-      imgSrc: "/",
+      imgSrc: "/vlsi.jpg",
       description:
-        "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.",
+        "VLSI stands for Very-Large-Scale Integration. It's a technology for creating integrated circuits (ICs) by combining millions or even billions of transistors onto a single chip.",
       T1: "What is VLSI?",
       T1content:
         "VLSI stands for Very-Large-Scale Integration. It's a technology for creating integrated circuits (ICs) by combining millions or even billions of transistors onto a single chip. This technology is the foundation of the modern semiconductor industry and allows for circuits that are significantly smaller and faster than previous generations.",
@@ -160,9 +163,9 @@ const Core = () => {
     
     {
       title: "Robotics",
-      imgSrc: "/",
-      description:
-        "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.",
+      imgSrc: "/Robotics.jpg",
+      // imgSrc:"/5253224.webp",
+      description:"Robotics is an interdisciplinary field that integrates engineering, computer science, and other disciplines to design, build, operate, and use robots.",
       T1: "What is Robotics?",
       T1content:
         "Robotics is an interdisciplinary field that integrates engineering, computer science, and other disciplines to design, build, operate, and use robots. Robots are machines capable of performing tasks autonomously or with partial human control, often mimicking or enhancing human capabilities. Robotics allows for automation of tasks ranging from simple assembly lines to complex surgeries and space exploration.",
@@ -224,7 +227,7 @@ const Core = () => {
     
     {
       title: "Electric Vehicle",
-      imgSrc: "/",
+      imgSrc: "/ev.png",
       description:
         "Electric vehicles are revolutionizing transportation. They offer a cleaner and more sustainable alternative to traditional gasoline-powered vehicles.",
       T1: "What is EV?",
@@ -292,21 +295,22 @@ const Core = () => {
   return (
     <div>
       {"  "}
-      <div className="relative py-16 max-h-screen">
+      <div className="relative py-16 max-h-screen ">
         <div className="container relative m-auto px-6 text-gray-500 md:px-12">
           <h2 className="text-2xl font-semibold text-black pb-6">
-            <span className="text-[#286AEA]">Core </span>Courses
+            <span className="text-[#286AEA]">Core </span>Programs
           </h2>
           <div className="grid gap-6 md:mx-auto md:w-10/12   md:grid-cols-2">
             {groupsData.map((group, index) => (
               <div key={index} className="coursecss ">
                 <Image
-                  className="mx-auto"
+                  className="mx-auto rounded-xl"
                   width={300}
                   height={100}
                   src={group.imgSrc}
                   alt="illustration"
                   loading="lazy"
+                  
                 />
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                   {group.title}
@@ -327,12 +331,12 @@ const Core = () => {
                       <p>{group.T1content}</p>
                       <div className="">
 
-                      <ReactPlayer
+                      {/* <ReactPlayer
                         url={group.Video}
                         // playing="true"
-                        
-                        
-                      />
+
+                      /> */}
+                      <video url={group.imgSrc} />
                       </div>
                       <h2 className="title2 ">{group.T2}</h2>
                       <ul>
@@ -369,7 +373,10 @@ const Core = () => {
           </div>
         </div>
       </div>
+      {/* <Footer/> */}
+      <div className="py-[55rem] md:py-0"></div>
     </div>
+
   );
 };
 

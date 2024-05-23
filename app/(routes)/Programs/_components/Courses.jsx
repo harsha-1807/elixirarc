@@ -17,28 +17,29 @@ const Courses = ({onCourseSelect}) => {
                 className="mx-auto "
                 width={300}
                 height={100}
-                src="/"
-                alt="illustration"
+                src="/Coreimg.svg"
+                // alt="illustration"
                 loading="lazy"
                 style={{ borderRadius: '6px' }}
               />
+              {/* <img src="/core" alt="" /> */}
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
-                Core
+                Core Programs
               </h3>
-              <p>
+              {/* <p>
                 Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
                 cum, consectetur ullam tempora ipsa iste officia sed officiis!
                 Incidunt ea animi officiis.
-              </p>
+              </p> */}
    
             </div>
 
             <div className="coursecss" onClick={(event) => handleCourseClick("course2",event)} >
             <Image
-                className="mx-auto "
+                className="mx-auto"
                 width={300}
                 height={100}
-                src="/"
+                src="/placement.svg"
                 alt="illustration"
                 loading="lazy"
                 style={{ borderRadius: '6px' }}
@@ -46,11 +47,11 @@ const Courses = ({onCourseSelect}) => {
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                 Placement Services
               </h3>
-              <p>
+              {/* <p>
                 Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
                 cum, consectetur ullam tempora ipsa iste officia sed officiis!
                 Incidunt ea animi officiis.
-              </p>
+              </p> */}
             </div>
             <div className="coursecss " onClick={(event) => {
                 event.stopPropagation();
@@ -60,7 +61,7 @@ const Courses = ({onCourseSelect}) => {
                 className="mx-auto "
                 width={300}
                 height={100}
-                src="/"
+                src="/Creative.svg"
                 alt="illustration"
                 loading="lazy"
                 style={{ borderRadius: '6px' }}
@@ -68,11 +69,11 @@ const Courses = ({onCourseSelect}) => {
               <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                 Creative
               </h3>
-              <p>
+              {/* <p>
                 Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at
                 cum, consectetur ullam tempora ipsa iste officia sed officiis!
                 Incidunt ea animi officiis.
-              </p>
+              </p> */}
            
             </div>
           </div>
