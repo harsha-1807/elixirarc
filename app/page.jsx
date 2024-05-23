@@ -297,9 +297,9 @@ export default function Home() {
         </p>
 
         <div className="  w-[100vw] md:h-[20vw] flex justify-around items-center  md:mt-0 max-h-max">
-          <span className="md:flex md:flex-row flex flex-col justify-between items-center w-[72vw] ">
+          <span className="md:flex md:flex-row flex flex-col justify-between items-center w-[75vw] ">
             {/* part 1  */}
-            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl m-4">
+            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4">
               <p className="text-[0.6rem] md:text-[1vw] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
                 “Thanks to this training, I've overcome my confusion with
                 embedded systems. Now, I'm at ease handling microcontrollers and
@@ -341,7 +341,7 @@ export default function Home() {
               </div>
             </div>
             {/* part 3  */}
-            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4">
+            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4 ">
               <p className="text-[0.6rem] md:text-[1vw] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
                 “The course has kickstarted my journey into electric vehicle
                 tech, with professors who made learning seamless, preparing me
