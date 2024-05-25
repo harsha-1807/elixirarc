@@ -37,7 +37,6 @@ function Programs() {
           {SelectedCourse === "course1" && <Core />}
           {SelectedCourse === "course2" && <Placement />}
           {SelectedCourse === "course3" && <Creative />}
-          <div className="h-[35vw] "></div>
         </div>
       )}
     </div>

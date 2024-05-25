@@ -51,7 +51,35 @@ function About() {
             />
 
           <h1 className="text-3xl font-bold mt-4 text-center ">Welcome to Elixir!</h1>
-      <div className="flex items-center justify-center  h-[25rem] md:h-[12rem]  ">
+     
+
+
+      {/* part 2 */}
+      <div className="flex items-center justify-center h-[20rem] md:h-[12rem] ">
+        <div className="text-center md:w-[60%]">
+          {/* <h1 className="text-3xl font-bold mb-4">Welcome to Elixir!</h1> */}
+          <div className="mt-8">
+            {/* <h2 className="text-2xl font-semibold mb-6">Our Vision</h2> */}
+            <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100 mt-[5rem]">
+            <span className="font-medium">Our</span> Vision
+          </h2>
+            <p
+              className={`transition-transform duration-1000 ease-out transform text-[1.25rem] font-medium ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-full"
+              }`}
+            >
+                 Our vision at Elixir is to seamlessly merge theory and practice in
+              Embedded Systems, VLSI, Robotics, and EV education. We empower
+              students to excel in competitive sectors by transforming learning
+              into practical mastery
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center h-[25rem] md:h-[20rem]  ">
         <div className="text-center md:w-[60%]">
           {/* part 1 */}
           <div className=" pt-[5rem]">
@@ -71,32 +99,6 @@ function About() {
               positions in the dynamic industries of Embedded Systems, VLSI,
               Robotics, and EV. Join us and let's redefine your journey to
               excellence.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      {/* part 2 */}
-      <div className="flex items-center justify-center h-[25rem] md:h-[20rem] ">
-        <div className="text-center md:w-[60%]">
-          {/* <h1 className="text-3xl font-bold mb-4">Welcome to Elixir!</h1> */}
-          <div className="mt-8">
-            {/* <h2 className="text-2xl font-semibold mb-6">Our Vision</h2> */}
-            <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">
-            <span className="font-medium">Our</span> Vision
-          </h2>
-            <p
-              className={`transition-transform duration-1000 ease-out transform text-[1.25rem] font-medium ${
-                isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-full"
-              }`}
-            >
-                 Our vision at Elixir is to seamlessly merge theory and practice in
-              Embedded Systems, VLSI, Robotics, and EV education. We empower
-              students to excel in competitive sectors by transforming learning
-              into practical mastery
             </p>
           </div>
         </div>

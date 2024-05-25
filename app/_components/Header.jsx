@@ -5,15 +5,21 @@ import React from "react";
 import Sidenav from "./Sidenav";
 import useScroll from "@/hooks/use-scroll";
 import { cn } from "@/lib/utils";
+import JotformEmbed from 'react-jotform-embed'; 
 
 function Header() {
+  // const handleRedirect = () => {
+  //   window.location.href = "https://form.jotform.com/jsform/241436216017044";
+  // };
   const Scrolled =  useScroll()
   return (
     <header className={cn("w-full fixed py-1 bg-[#fffcf5c6] h-[10%] z-[99] glass",
     Scrolled && "border-b shadow-lg"
     )}>
+
       <div className="mx-auto flex h-16 max-w-[91vw] items-center gap-2 px-2 sm:px-6 lg:px-10 poller-one-regular justify-between">
-        <Link href="/">
+        <Link href="/
+        ">
           <div className="flex ">
             {/* <Image src="/elixirLogo2.svg" alt="logo" width={50} height={50} /> */}
             <Image src="/ElixirLogo2.svg" alt="logo" width={50} height={50} />
@@ -58,9 +64,10 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <a href="#ourServices" className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white">
+                <Link href="/jotform" className="hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white">
                   Get started
-                </a>
+                </Link>
+                
               </li>
             </ul>
           </nav>
@@ -72,6 +79,7 @@ function Header() {
           </div>
         </div>
       </div>
+      
     </header>
   );
 }

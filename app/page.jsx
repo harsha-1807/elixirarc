@@ -315,7 +315,7 @@ export default function Home() {
                 />
                 <span className="ml-[10px]">
                   <h2 className="font-medium">Finlay Kirk</h2>
-                  <p className="text-[#8A8A8A]">Web Developer</p>
+                  <p className="text-[#8A8A8A]">Embedded systems</p>
                 </span>
               </div>
             </div>
@@ -336,7 +336,7 @@ export default function Home() {
                 />
                 <span className="ml-[10px]">
                   <h2 className="font-medium">Danette P.Cervants</h2>
-                  <p className="text-[#8A8A8A]">Web Design</p>
+                  <p className="text-[#8A8A8A]">ELectric vehicle </p>
                 </span>
               </div>
             </div>
@@ -353,11 +353,10 @@ export default function Home() {
                   alt="profile"
                   height={40}
                   width={40}
-
                 />
                 <span className="ml-[10px]" id="member">
                   <h2 className="font-medium">Clara R. Altman</h2>
-                  <p className="text-[#8A8A8A]">UI&UX Design</p>
+                  <p className="text-[#8A8A8A]">Electric vehicle</p>
                 </span>
               </div>
             </div>
