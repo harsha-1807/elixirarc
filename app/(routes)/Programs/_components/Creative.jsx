@@ -5,11 +5,11 @@ import React from "react";
 const Creative = () => {
   // Define an array of objects with data for each "group" element
   const groupsData = [
-    {
-      title: "Web development",
-      imgSrc: "/Webdev.jpg",
-      description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
-    },
+    // {
+    //   title: "Web development",
+    //   imgSrc: "/Webdev.jpg",
+    //   description: "Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis."
+    // },
     {
       title: "UI/UX",
       imgSrc: "/uiux.png",
@@ -29,7 +29,7 @@ const Creative = () => {
         <h2 className="text-2xl font-semibold text-black pb-6">
             <span className="text-[#286AEA]">Creative </span>Programs
           </h2>
-          <div className="grid gap-6 md:mx-auto md:w-8/12 lg:w-full lg:grid-cols-3">
+          <div className="grid gap-6 md:mx-auto md:w-9/12  lg:grid-cols-2">
             {/* Map over the groupsData array to render each "group" */}
             {groupsData.map((group, index) => (
               <div key={index} className="coursecss ">

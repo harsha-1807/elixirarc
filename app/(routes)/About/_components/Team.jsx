@@ -69,7 +69,7 @@ const Team = () => {
             <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
-                <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
+                <Image src="/vishwa.jpg" width={200} height={200}  className="max-w-full h-auto mx-auto rounded-full bg-gray-50  " alt="title image" />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">Vishvanath</p>
@@ -89,11 +89,11 @@ const Team = () => {
             <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
-                <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
+                <Image src="/aravindh.jpg"   width={200} height={200}   className="max-w-full h-auto mx-auto rounded-full bg-gray-50 " alt="title image" />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">Aravind</p>
-                <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
+                <p className="text-gray-500 leading-relaxed font-light">Co-founder CTO</p>
                 <div className="mt-2 mb-5 space-x-2 flex justify-center">
                 <Link href="https://www.linkedin.com/in/aravindhantv">
                   <Linkedin />
@@ -109,11 +109,12 @@ const Team = () => {
             <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
               <div className="relative overflow-hidden px-6">
-                <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale" alt="title image" />
+              {/* https://tailone.tailwindtemplate.net/src/Image/dummy/avatar1.png */}
+                <Image src="/vicky.png"  width={200} height={200}  className="max-w-full h-auto mx-auto rounded-full bg-gray-50 " alt="title image" />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">Vikirthan</p>
-                <p className="text-gray-500 leading-relaxed font-light">Founder CEO</p>
+                <p className="text-gray-500 leading-relaxed font-light">Co-founder CBO</p>
                 <div className="mt-2 mb-5 space-x-2 flex justify-center">
                   <Link href="https://www.linkedin.com/in/vikirthan">
                   <Linkedin />

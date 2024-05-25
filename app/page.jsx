@@ -35,21 +35,30 @@ export default function Home() {
         />
 
         <div className="mb-10">
-          <h1 className="font-sans font-bold md:mt-20 md:text-[5rem] text-[2rem]">
+          {/* <h1 className="font-sans font-bold md:mt-20 md:text-[5rem] text-[2rem]">
             Time To<span className="text-[#FF7426]"> Unlock</span> <br />
             Your <span className="text-[#FF7426]">Potential</span>{" "}
+          </h1> */}
+          <h1 className="font-sans font-bold md:mt-20 md:text-[4.5rem] text-[2rem]">
+            Be The <span className="text-[#FF7426]">Change</span> <br />
+            To <span className="text-[#FF7426]">Change</span>{" "}
           </h1>
-
           <p className="text-[#8A8A8A] my-6 text-wrap md:w-[40vw] h-max md:h-max">
             At Elixir we're passionate about empowering future generations.We're
-            here to bridge the gap between education and opputunity and help the
-            student to achieve their desired position in this competitive world
+            here to bridge the gap between education and oppurtunity and help the
+            students to achieve their desired position in this competitive world
           </p>
           <a
             href="/Programs"
-            className="rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max "
+            className="hidden md:block rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max "
           >
             Explore Now!
+          </a>
+          <a
+            href="/jotform"
+            className="block md:hidden rounded-full bg-[#4D2C5E] px-5 py-2.5 text-sm font-medium  transition  sm:block poppins-bold text-white w-max "
+          >
+            Enroll Now !
           </a>
         </div>
         <div>
@@ -143,7 +152,7 @@ export default function Home() {
         >
           Our Services
         </h2>
-        <p className="text-[0.8rem] md:text-[1vw] text-center font-medium text-[#8A8A8A] ">
+        <p className="text-[0.8rem] md:text-[1vw] mb-[2rem] text-center font-medium text-[#8A8A8A] ">
           Specilized techniques to strengthen your journey
         </p>
         <div className="w-[100vw] md:w-[90vw] md:ml-10 md:h-[23vw] h-max flex-row md:flex justify-around items-center ">
@@ -290,73 +299,65 @@ export default function Home() {
           className="icons hidden md:block"
         />
         <h2 className="text-black  text-center font-semibold md:text-[3vw] text-[1.5rem] h-max">
-          What Students's Ask{" "}
+          What Students Required{" "}
         </h2>
-        <p className="text-[1rem] md:text-[1vw] text-center font-medium text-[#8A8A8A] h-max">
-          Discover the impact we make{" "}
+        <p className="text-[1rem] md:text-[1vw] text-center font-medium text-[#8A8A8A] h-max ">
+          The actual need of the students{" "}
         </p>
 
         <div className="  w-[100vw] md:h-[20vw] flex justify-around items-center  md:mt-0 max-h-max">
-          <span className="md:flex md:flex-row flex flex-col justify-between items-center w-[75vw] ">
+          <span className="md:flex md:flex-row flex flex-col justify-between items-center w-[70rem] ">
             {/* part 1  */}
-            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4">
-              <p className="text-[0.6rem] md:text-[1vw] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
-                “Thanks to this training, I've overcome my confusion with
-                embedded systems. Now, I'm at ease handling microcontrollers and
-                programming embedded devices. It's much simpler than learning a
-                new language.”
+            <div className="bg-white md:w-[22rem] md:h-max w-[90%] drop-shadow-2xl mb-4 pb-2">
+              <p className="text-[0.6rem] md:text-[1rem] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
+                “I need more hands-on projects, additional resources for advanced topics, and increased opportunities for industry internships to gain practical experience and knowledge.”
               </p>
               <div className="flex ml-[1vw]">
                 <Image
-                  src="/profile1.svg"
+                  src="/1.png"
                   alt="profile"
                   height={40}
                   width={40}
                 />
                 <span className="ml-[10px]">
-                  <h2 className="font-medium">Finlay Kirk</h2>
+                  <h2 className="font-medium">Rohit</h2>
                   <p className="text-[#8A8A8A]">Embedded systems</p>
                 </span>
               </div>
             </div>
             {/* part 2  */}
-            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4">
-              <p className="text-[0.6rem] md:text-[1vw] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
-                “This course has jump-started my entry into ev technology, a
-                field with lasting relevance. The knowledgeable professors made
-                grasping the material effortless, leaving me ready to contribute
-                to the green revolution.”
+            <div className="bg-white md:w-[22rem] md:h-max w-[90%] drop-shadow-2xl mb-4 pb-2">
+              <p className="text-[0.6rem] md:text-[1rem] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
+                “I require access to more detailed simulations, advanced CAD tools for design practice as well as guidance on emerging technologies and trends in VLSI design.”
               </p>
               <div className="flex ml-[1vw]">
                 <Image
-                  src="/profile2.svg"
+                  src="/2.png"
                   alt="profile"
                   height={40}
                   width={40}
                 />
                 <span className="ml-[10px]">
-                  <h2 className="font-medium">Danette P.Cervants</h2>
-                  <p className="text-[#8A8A8A]">ELectric vehicle </p>
+                  <h2 className="font-medium">Dharshini</h2>
+                  <p className="text-[#8A8A8A]">VLSI</p>
                 </span>
               </div>
             </div>
             {/* part 3  */}
-            <div className="bg-white md:w-[23vw] md:h-[13vw] w-[100%] drop-shadow-2xl mb-4 ">
-              <p className="text-[0.6rem] md:text-[1vw] text-wrap  font-medium text-[#8A8A8A] m-[11px]">
-                “The course has kickstarted my journey into electric vehicle
-                tech, with professors who made learning seamless, preparing me
-                for the green transportation revolution.”
+            <div className="bg-white  md:w-[22rem] md:h-max w-[90%] drop-shadow-2xl mb-4 pb-2 ">
+              <p className="text-[0.6rem] md:text-[1rem] text-wrap font-medium text-[#8A8A8A] m-[11px]">
+                “I need more hands-on programming experience, access to advanced robotic resources as well guidance on the latest advancements in AI and machine learning integration with robotics.”
               </p>
               <div className="flex ml-[1vw]">
                 <Image
-                  src="/profile3.svg"
+                  src="/3.png"
                   alt="profile"
                   height={40}
                   width={40}
                 />
                 <span className="ml-[10px]" id="member">
-                  <h2 className="font-medium">Clara R. Altman</h2>
-                  <p className="text-[#8A8A8A]">Electric vehicle</p>
+                  <h2 className="font-medium">Prithiv</h2>
+                  <p className="text-[#8A8A8A]">Robotics</p>
                 </span>
               </div>
             </div>

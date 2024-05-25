@@ -13,7 +13,7 @@ const Form = () => {
 
 
   const handleEmailClick = () => {
-   const href = `mailto:elixircofficial@gmail.com?subject=New Member Alert!&body=Hi,I am ${name? name: empty}.My mail is ${mail? mail: empty}.My contact number : ${phone? phone: empty}.The message:${message? message:empty}`;
+   const href = `mailto:contact.elixirarc@gmail.com?subject=New Member Alert!&body=Hi,I am ${name? name: empty}.My mail is ${mail? mail: empty}.My contact number : ${phone? phone: empty}.The message:${message? message:empty}`;
    window.location.href = href; // Open the email client
  };
 
@@ -49,7 +49,7 @@ const Form = () => {
  py-20 lg:py-[120px] overflow-hidden relative z-10"
       >
         <div className="container">
-          <div className="flex flex-wrap lg:justify-between -mx-4">
+          <div className="flex flex-wrap lg:justify-between md:mx-10">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0">
                 <span className="block mb-4 text-base  font-semibold text-[#764d8b]">

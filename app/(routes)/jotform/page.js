@@ -20,7 +20,7 @@ const jotform = () => {
     >
     </iframe>
     <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-241436216017044']", "https://form.jotform.com/")</script>
+    {/* <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-241436216017044']", "https://form.jotform.com/")</script> */}
 
     </div>
   )

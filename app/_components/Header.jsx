@@ -13,7 +13,7 @@ function Header() {
   // };
   const Scrolled =  useScroll()
   return (
-    <header className={cn("w-full fixed py-1 bg-[#fffcf5c6] h-[10%] z-[99] glass",
+    <header className={cn("w-full fixed py-1 bg-[#fffcf5c6] h-[4.5rem] z-[99] glass",
     Scrolled && "border-b shadow-lg"
     )}>
 

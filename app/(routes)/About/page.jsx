@@ -26,28 +26,28 @@ function About() {
         alt="icon"
         height={60}
         width={60}
-        className="top-[10rem] left-[15rem] icons hidden md:block"
+        className="top-[10rem] left-[15vw] icons hidden md:block"
       />
         <Image
           src="/icon2.svg"
           alt="icon"
           height={70}
           width={70}
-          className="bottom-[13rem] left-[15rem] icons hidden md:block"
+          className="bottom-[13rem] left-[15vw] icons hidden md:block"
           />
         <Image
           src="/icon3.svg"
           alt="icon"
           height={60}
           width={80}
-          className="bottom-[10rem] left-[75rem] rotate-270 icons hidden md:block"
+          className="bottom-[10rem] left-[85vw] rotate-270 icons hidden md:block"
         />
           <Image
               src="/icon10.svg"
               alt="icon"
               height={60}
               width={60}
-              className="top-[8rem] left-[75rem] icons  hidden md:block"
+              className="top-[8rem] left-[80vw] icons  hidden md:block"
             />
 
           <h1 className="text-3xl font-bold mt-4 text-center ">Welcome to Elixir!</h1>

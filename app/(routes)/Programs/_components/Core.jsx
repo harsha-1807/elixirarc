@@ -18,7 +18,7 @@ import Footer from "@/app/_components/Footer";
 const Core = () => {
   const groupsData = [
     {
-      title: "Embedded",
+      title: "Embedded Systems",
       imgSrc: "/embedded.svg",
       description:
         "Embedded systems are specialized computer systems designed for a specific function. Unlike general-purpose computers, they can operate independently or as part of a larger system",
@@ -318,7 +318,7 @@ const Core = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                   {group.title}
                 </h3>
-                <p className="md:h-[5rem]">{group.description}</p>
+                {/* <p className="md:h-[5rem]">{group.description}</p> */}
 
                 <Dialog className="custom-dialog ">
                   <DialogTrigger>
@@ -385,8 +385,8 @@ const Core = () => {
       </div>
       {/* <Footer/> */}
 
-      <div className="pb-[140rem] md:py-[2rem]"></div>
-      <div className="h-[35vw] "></div>
+      <div className="pb-[100rem] md:py-[0rem]"></div>
+      <div className="md:h-[30vw] h-[0vw]"></div>
     </div>
   );
 };
