@@ -385,7 +385,7 @@ const Core = () => {
       </div>
       {/* <Footer/> */}
 
-      <div className="pb-[100rem] md:py-[0rem]"></div>
+      <div className="pb-[100rem] md:py-[4rem]"></div>
       <div className="md:h-[30vw] h-[0vw]"></div>
     </div>
   );
