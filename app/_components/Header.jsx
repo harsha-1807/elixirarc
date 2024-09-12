@@ -6,6 +6,7 @@ import Sidenav from "./Sidenav";
 import useScroll from "@/hooks/use-scroll";
 import { cn } from "@/lib/utils";
 import JotformEmbed from 'react-jotform-embed'; 
+import Announce from "./Announce";
 
 function Header() {
   // const handleRedirect = () => {
@@ -13,10 +14,10 @@ function Header() {
   // };
   const Scrolled =  useScroll()
   return (
-    <header className={cn("w-full fixed py-1 bg-[#fffcf5c6] h-[4.5rem] z-[99] glass",
-    Scrolled && "border-b shadow-lg"
+    <header className={cn("w-full fixed  bg-[#fffcf5c6] md:h-[6.5rem] z-[99] glass",
+      Scrolled && "border-b shadow-lg"
     )}>
-
+      <Announce/>
       <div className="mx-auto flex h-16 max-w-[91vw] items-center gap-2 px-2 sm:px-6 lg:px-10 poller-one-regular justify-between">
         <Link href="/
         ">

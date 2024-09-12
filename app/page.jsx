@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import Partners from "./_components/Partners";
+
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      {/* <div className="h-[10vh]" ></div> */}
       <div className="w-[95vw] flex flex-col-reverse md:flex-row md:justify-around ml-[5vw] mb-[2vw] h-max  ">
+        
         <Image
           src="/icon10.svg"
           alt="icon"
@@ -235,7 +239,6 @@ export default function Home() {
               className="md:absolute main2 md:h-[31vw] md:w-[32vw] w-[20rem]  "
             />
           </div>
-
           <div>
             <h1 className="font-bold text-[1.5rem] mt-10 md:mt-0 md:text-[2.5vw]">
               Premium <span className="text-[#FF7426]">Learning</span>
@@ -287,8 +290,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
+      <Partners/>
+      
       {/* white box  */}
       <div className="bg-white w-[100vw] pt-[5vw] flex flex-col max-h-max">
         <Image
@@ -404,6 +410,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
     </main>
   );
 }
