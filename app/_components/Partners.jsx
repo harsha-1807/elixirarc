@@ -127,7 +127,7 @@ function Partners() {
       <div className="relative overflow-hidden  dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style={{ visibility: 'visible', animationDuration: '1s', animationName: 'fadeInUp' }}>
 
         <div className="relative overflow-hidden px-6">
-          <Image src="/CHIP-WEB-LOGO-70x70.jpg" width={200} height={200}  className="max-w-full h-auto mx-auto rounded-full bg-gray-50  " alt="title image" />
+          <Image src="/chipweb.png" width={200} height={200}  className="max-w-full h-auto mx-auto rounded-full bg-gray-50  " alt="title image" />
         </div>
         <div className="pt-6 text-center">
           <p className="text-lg leading-normal font-bold mb-1">Chip Web Technologies </p>

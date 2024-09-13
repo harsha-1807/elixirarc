@@ -49,8 +49,9 @@ export default function Home() {
           </h1>
           <p className="text-[#8A8A8A] my-6 text-wrap md:w-[40vw] h-max md:h-max">
             At Elixir we're passionate about empowering future generations.We're
-            here to bridge the gap between education and oppurtunity and help the
+            here to bridge the gap between education and opportunity and help the
             students to achieve their desired position in this competitive world
+            
           </p>
           <a
             href="/Programs"
